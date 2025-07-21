@@ -3,7 +3,7 @@
 //         <div>Navbar</div>
 //     )
 // }
-
+import "../index.css"
 // export default Navbar
 import styled from "styled-components";
 
@@ -75,8 +75,8 @@ const Button = styled.button`
 
 const Navbar = () => {
   return (
-    <Section>
-      <Container>
+    <Section className=" container mx-auto flex justify-between items-center ">
+      <Container className="">
         <Links>
           <Logo src="./img/logo.png" />
           <List>
@@ -88,7 +88,7 @@ const Navbar = () => {
         </Links>
         <Icons>
           <Icon src="./img/search.png" />
-          <Button> درخواست بده</Button>
+          <Button className=""> درخواست بده</Button>
         </Icons>
       </Container>
     </Section>

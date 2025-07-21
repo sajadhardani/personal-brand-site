@@ -82,7 +82,7 @@ const Button = styled.button`
 const Who = () => {
     return(
        <Section>
-        <Container>
+        <Container className="">
             <Left>
                 <Canvas camera={{position:[5,5,5], fov:25}}>
                     <Suspense fallback={null} />

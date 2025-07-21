@@ -97,10 +97,10 @@ const Right = styled.div`
 const Works = () => {
     const [work , setWork] = useState("طراحی سایت")
     return(
-       <Section>
-        <Container>
-            <Left>
-                <List>
+       <Section className="h-screen scroll-snap-align-center flex justify-center items-center text-black text-sm font-light">
+        <Container className="container mx-auto px-4 md:flex-row justify-between gap-8">
+            <Left className="">
+                <List className="">
                     {data.map((item)=>(
                         <ListItem key={item} text={item} onClick={()=> setWork(item)}>
                             {item}
@@ -109,7 +109,7 @@ const Works = () => {
                     ))}
                 </List>
             </Left>
-            <Right>
+            <Right className=""> 
                 {work ===  "طراحی سایت" ? (
                     <WebDesign/>
                 ):  work === "توسعه وب سایت" ? (
